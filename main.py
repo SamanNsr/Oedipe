@@ -1,5 +1,7 @@
 import telepot
 import pyautogui
+from telepot.loop import MessageLoop
+from token import *
 
 
 class MyBot(telepot.Bot):
@@ -12,3 +14,9 @@ class MyBot(telepot.Bot):
         pic = pyautogui.screenshot()
         pic.save('image\\screenshot.png')
         return
+
+
+TOKEN = telegramBotToken
+
+bot = MyBot(TOKEN)
+MessageLoop(bot).run_as_thread()

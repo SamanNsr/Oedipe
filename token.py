@@ -1,5 +1,5 @@
 # A token you get from the Telegram's botfather
-telegrambot = 'xxxxxxxxxxxxxxxxxx'
+telegramBotToken = 'xxxxxxxxxxxxxxxxxx'
 
-# A chat_id of your client
+# A username of your client
 userName = "Oedipe"
