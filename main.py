@@ -31,3 +31,6 @@ TOKEN = telegramBotToken
 
 bot = MyBot(TOKEN)
 MessageLoop(bot).run_as_thread()
+
+while 1:
+    time.sleep(20)
