@@ -1,3 +1,5 @@
+import time
+
 import telepot
 import pyautogui
 from telepot.loop import MessageLoop
