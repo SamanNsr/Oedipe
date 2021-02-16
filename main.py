@@ -26,7 +26,7 @@ class MyBot(telepot.Bot):
                 bot.sendMessage(chat_id, "Capturing image")
                 self.takeImage()
                 bot.sendPhoto(chat_id, photo=open(
-                    'img\\screenshot.png', 'rb'))
+                    'image\\screenshot.png', 'rb'))
 
 
 TOKEN = telegramBotToken
