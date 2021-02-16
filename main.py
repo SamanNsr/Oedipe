@@ -15,6 +15,17 @@ class MyBot(telepot.Bot):
         pic.save('image\\screenshot.png')
         return
 
+    def on_chat_message(self, msg):
+        content_type, chat_type, chat_id = telepot.glance(msg)
+
+        if content_type == 'text':
+            if msg['text'] == '/' + userName:
+                bot.sendChatAction(chat_id, 'typing')
+                bot.sendMessage(chat_id, "Capturing image")
+                self.takeImage()
+                bot.sendPhoto(chat_id, photo=open(
+                    'img\\screenshot.png', 'rb'))
+
 
 TOKEN = telegramBotToken
 
